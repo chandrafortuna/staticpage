@@ -11,6 +11,7 @@ gem 'rspec-rails', '2.6.1'
 gem 'webrat'
 gem 'spork'
 gem 'autotest'
+gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

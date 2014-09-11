@@ -16,17 +16,17 @@ describe "LayoutsLinks" do
     response.should have_selector('title', :content => "Home")
   end
 
-  it "Should have Contact page at '/'" do
+  it "Should have Contact page at '/contact'" do
     get '/'
     response.should have_selector('title', :content => "Contact")
   end
 
-  it "Should have About page at '/'" do
+  it "Should have About page at '/about'" do
     get '/'
     response.should have_selector('title', :content => "About")
   end
 
-  it "Should have Help page at '/'" do
+  it "Should have Help page at '/help'" do
     get '/'
     response.should have_selector('title', :content => "Help")
   end
