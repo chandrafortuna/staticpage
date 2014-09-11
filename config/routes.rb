@@ -1,12 +1,14 @@
 Staticpage::Application.routes.draw do
-=begin
+  get "users/new"
+
   get "pages/home"
 
   get "pages/contact"
   get "pages/about"
   get "pages/help"
+  get "user/new"
 
-=end
+  match '/signup', :to => 'users#new'
 
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
